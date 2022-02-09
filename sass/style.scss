@@ -1,0 +1,93 @@
+@import "mixin";
+
+
+body {
+    font-family: sans-serif !important;
+    .header {
+
+        &__row {
+            @include flex(justify-content,flex-end,align-items,center);
+            .header__logo {
+                position: relative;
+                right: -17%;
+                
+            }
+            .header__titulo {
+                position: relative;
+                top: 5px;
+                left: -15px;
+                font-size: 2rem;
+                font-weight: bold;       
+            }
+        }
+        &__logo {
+            height: 50px;
+            border: none;
+           
+        }
+        &__row--texto {
+            .row__texto {
+                text-align: center;
+                padding-top: 5px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+                font-size: 1rem;
+                font-weight: lighter;
+    
+            }
+            
+        }
+    }
+
+    .menu {
+        
+        padding-top: 18px;
+        padding-bottom: 18px;
+        &__row {
+            .row__link {
+                color:#444 !important;
+                transition-duration: 0.5s;
+                font-size: 15px;
+                font-weight: lighter;
+                text-align: center;
+                
+            }
+            .row__link:hover{
+                color: orange !important;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+
+    .conteudo__principal {
+        background-image: url("/img/g_1.jpg");
+        height: 350px;
+        width: 90%;
+        background-position: center center;
+        background-size: cover;
+        &--card {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            top: 55%;
+            .conteudo__principal--corpo {
+                height: 140px;
+                .conteudo__principal--titulo {
+                    font-size: 24px;
+                    font-weight: bold;
+                    padding: 5px;
+                }
+                .conteudo__principal--info {
+                    color: grey;
+                    padding: 0 5px 15px 5px;
+                    font-size: 0.88rem;   
+                }
+                .btn-primary {
+                    @include botao;
+                }
+            }
+        }
+
+    }
+    // seção com cards
+}

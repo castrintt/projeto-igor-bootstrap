@@ -1,0 +1,79 @@
+body {
+  font-family: sans-serif !important;
+}
+body .header__row {
+  display: flex;
+}
+body .header__row .header__logo {
+  position: relative;
+  right: -17%;
+}
+body .header__row .header__titulo {
+  position: relative;
+  top: 5px;
+  left: -15px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+body .header__logo {
+  height: 50px;
+  border: none;
+}
+body .header__row--texto .row__texto {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+  font-size: 1rem;
+  font-weight: lighter;
+}
+body .menu {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+body .menu__row .row__link {
+  color: #444 !important;
+  transition-duration: 0.5s;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+}
+body .menu__row .row__link:hover {
+  color: orange !important;
+  transition-duration: 0.5s;
+}
+body .conteudo__principal {
+  background-image: url("/img/g_1.jpg");
+  height: 350px;
+  width: 90%;
+  background-position: center center;
+  background-size: cover;
+}
+body .conteudo__principal--card {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  top: 55%;
+}
+body .conteudo__principal--card .conteudo__principal--corpo {
+  height: 140px;
+}
+body .conteudo__principal--card .conteudo__principal--corpo .conteudo__principal--titulo {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px;
+}
+body .conteudo__principal--card .conteudo__principal--corpo .conteudo__principal--info {
+  color: grey;
+  padding: 0 5px 15px 5px;
+  font-size: 0.88rem;
+}
+body .conteudo__principal--card .conteudo__principal--corpo .btn-primary {
+  padding: 5px 18px 5px 18px;
+  border: none;
+  border-radius: 0;
+  color: white;
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

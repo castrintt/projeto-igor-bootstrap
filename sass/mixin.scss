@@ -1,0 +1,20 @@
+@mixin font-titulo-h1-h2 {
+    font-size: calc(1.325rem + 9vw);
+    @content;
+
+}
+
+@mixin flex ($jtf,$valuej,$align,$valuea){
+    display: flex;
+    $jtf:$valuej;
+    $align:$valuea;
+    @content;
+}
+
+@mixin botao {
+    padding: 5px 18px 5px 18px;
+    border: none;
+    border-radius: 0;
+    color: white;
+    background-color: black;
+}
