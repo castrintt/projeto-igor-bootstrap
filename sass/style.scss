@@ -3,20 +3,24 @@
 
 body {
     font-family: sans-serif !important;
+    height: 100vh;
     .header {
 
         &__row {
+            padding-bottom:5px; 
             @include flex(justify-content,flex-end,align-items,center);
             .header__logo {
                 position: relative;
                 right: -17%;
+                top: 10px;
+                @include desktop;
                 
             }
             .header__titulo {
                 position: relative;
-                top: 5px;
-                left: -15px;
-                font-size: 2rem;
+                top: 20px;
+                left: -11px;
+                font-size: 1.7rem;
                 font-weight: bold;       
             }
         }
@@ -31,7 +35,7 @@ body {
                 padding-top: 5px;
                 padding-bottom: 20px;
                 border-bottom: 1px solid rgba(128, 128, 128, 0.411);
-                font-size: 1rem;
+                font-size: 0.95rem;
                 font-weight: lighter;
     
             }
@@ -41,8 +45,8 @@ body {
 
     .menu {
         
-        padding-top: 18px;
-        padding-bottom: 18px;
+        padding-top: 25px;
+        padding-bottom: 25px;
         &__row {
             .row__link {
                 color:#444 !important;
@@ -61,7 +65,8 @@ body {
 
     .conteudo__principal {
         background-image: url("/img/g_1.jpg");
-        height: 350px;
+        background-repeat: no-repeat;
+        height: 390px;
         width: 90%;
         background-position: center center;
         background-size: cover;
@@ -69,25 +74,95 @@ body {
             position: relative;
             left: 50%;
             transform: translate(-50%);
-            top: 55%;
+            top: 50%;
             .conteudo__principal--corpo {
-                height: 140px;
+                height: 160px;
                 .conteudo__principal--titulo {
                     font-size: 24px;
                     font-weight: bold;
                     padding: 5px;
                 }
                 .conteudo__principal--info {
-                    color: grey;
-                    padding: 0 5px 15px 5px;
-                    font-size: 0.88rem;   
+                    @include dataRealizada;
                 }
                 .btn-primary {
                     @include botao;
+                    padding: 10px 15px;
                 }
             }
         }
 
     }
     // seção com cards
+
+    .section {
+        width: 100%;
+        .section__titulo {
+            padding: 50px 0px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .card {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            width: 100% !important;
+            padding: 5px;
+            border: none;
+            margin-bottom: 30px;
+            .card-body {
+                position: relative;
+                left: -15px;
+                .card-title {
+                    font-size: 22px;
+                    padding: 10px 0px 10px 0px;
+                    
+                }
+                .section__card--text {
+                    @include dataRealizada;
+                    margin-left: -4px;
+                    
+                }
+            }
+        }
+        .btn {
+            @include botao;
+            padding: 10px 15px 10px 15px;
+        }
+    }
+    .footer__container {
+        height: 20vh;
+        .footer__row {
+            padding: 55px 0px 60px 0px;
+            text-align: center;
+            font-size: 18px;
+            color: grey;
+            border-top: 1px solid rgba(128, 128, 128, 0.692);
+        }
+       
+           .bi-facebook {
+               position: relative;
+               left: 100%;
+               transform: translate(-50%);
+           }
+           .bi-instagram {
+               position: relative;
+               left: 25%;
+               transform: translate(-50%);
+           }
+           .bi-twitter {
+               position: relative;
+               left: -50%;
+               transform: translate(50%);
+           }
+        
+        .copy {
+            text-align: center;
+            padding: 50px 0;
+            color: grey;
+        }
+    }
+   
+    
 }
